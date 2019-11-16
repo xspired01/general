@@ -22,9 +22,9 @@ The implicit conversion of another `+` operator can be a double-edged sword. It 
 
 This was encapsulated in a discussion on social media with string concatenation. The question asked was given the code below (with slight modification) why does JavaScript produce its result?  If you are not familiar with what the `+` operator does, then the output is a confusing and weird. If you understand what the `+` operator does, then the result is funny.
 
-   `var crazy = "b" + "a" + + "a" + "a" + "s";`
-   `var gorilla = crazy.toLowerCase();`
-   `console.log(gorilla);`
+`var crazy = "b" + "a" + + "a" + "a" + "s";`  
+`var gorilla = crazy.toLowerCase();`  
+`console.log(gorilla);`  
 
 Know the answer? 
 

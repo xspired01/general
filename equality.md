@@ -16,6 +16,8 @@ Object.is() checks for the same value. Does what you expect for ===.
 `Object.is(NaN, NaN)` returns true
 `Object.is(0,-0)` returns false
 
+In the `equality.js` file, there are simple functions to check for equality using `Object.is()`.
+
 ## Rule of Thumb for using double equals ==
 
 Think of double equals as a numerical checker. Double equals performs type conversion on both elements being checked, but the preference is converting the elements to numbers and performing an equality check. If only numbers are being checked for equality, then double equals adequately performs its purpose.

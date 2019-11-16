@@ -9,18 +9,18 @@ Basically, JavaScript tries to be helpful and reduce the amount of code to be wr
 # Common patterns using plus (+) operator
 ## String conversions
 
-The plus (`+`) operator is an overloaded operator, it performs more than one operation. In addition to performing addition and summing two numbers, or joining two strings, the plus operator will ALSO try to convert variables to the same type and add them. One common example is adding a string to a number to make a string. Adding `"5" + 5` will produce `"55"`. Another common pattern is adding an empty string to something and convert that to a string. `"" + 55`, will also produce `"55"`. 
+The plus (`+`) operator is an overloaded operator, overloaded means it performs more than one operation. In addition to performing addition between two numbers and concatenating, or joining, two strings, the plus operator will ALSO try to convert variables to the same type and add them. One common example is adding a string to a number to make a string. Adding `"5" + 5` will produce `"55"`. Another common pattern is adding an empty string to an element and convert that to a string. `"" + 55`, will also produce `"55"`. 
 
 # Plus operator can also do this
 ## Number conversion
 
-However, the `+` operator can also convert to numbers. For example, `5 + + '5'` will produce `10`. The extra plus operator convert the string '5' to a number and the two numbers. Reverse the order and put the string first `"5" + + 5`, the plus operator will convert to a string, resulting in `55`. 
+However, the `+` operator can also convert to numbers. For example, `5 + + '5'` will produce `10`. The extra plus operator converts the string '5' to a number and adds the two numbers. Reverse the order and put the string first `"5" + + 5`, the plus operator will convert the number to a string and add two strings, resulting in `"55"`. 
 
-The implicit conversion of another `+` operator can be a double-edged sword. It cuts both ways and can produce unintended results.
+The implicit conversion of another `+` operator can be a double-edged sword. It cuts both ways and can produce unintended results. Especially with typographical errors.
 
 # Double-edged Sword of Conversion using `+`
 
-This was encapsulated in a discussion on social media with string concatenation. The question asked was given the code below why does JavaScript produce its result?  If you are not familiar with what the `+` operator does, then the output is a confusing and weird. If you understand what the `+` operator does, then the result is funny.
+This was encapsulated in a discussion on social media with string concatenation. The question asked was given the code below (with slight modification) why does JavaScript produce its result?  If you are not familiar with what the `+` operator does, then the output is a confusing and weird. If you understand what the `+` operator does, then the result is funny.
 
 `var crazy = "b" + "a" + + "a" + "a" + "s";`
 `var gorilla = crazy.toLowerCase();`

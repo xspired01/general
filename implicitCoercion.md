@@ -14,7 +14,11 @@ The plus (`+`) operator is an overloaded operator, overloaded means it performs 
 # Plus operator can also do this
 ## Number conversion
 
-However, the `+` operator can also convert strings to numbers. For example, `5 + + '5'` will produce `10`. The extra plus operator converts the string '5' to a number and adds the two numbers. Reverse the order and put the string first `"5" + + 5`, the plus operator will convert the number to a string and add two strings, resulting in `"55"`. 
+However, the `+` operator can also convert strings to numbers. In the MDN documentation, this is called the [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment](unary plus operator (+)). This is where the plus sign precedes its operand and converts it to a number. 
+
+For example, `5 + + '5'` will produce `10`. The unary operator converts the string `'5'` to the number `5` and adds the two numbers, resulting in `55`. 
+
+However, you can also convert a number into a string with the unary operator. In this operation, `"5" + + 5`, the unary operator will convert the number `5` to a string and add two strings, resulting in `"55"`. 
 
 The implicit conversion of another `+` operator can be a double-edged sword. It cuts both ways and can produce unintended results. Especially with typographical errors.
 

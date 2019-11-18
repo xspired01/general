@@ -18,7 +18,7 @@ However, the `+` operator can also convert strings to numbers. In the MDN docume
 
 For example, `5 + + '5'` will produce `10`. The unary operator converts the string `'5'` to the number `5` and adds the two numbers, resulting in `55`. 
 
-However, you can also convert a number into a string with the unary operator. In this operation, `"5" + + 5`, the unary operator will convert the number `5` to a string and add two strings, resulting in `"55"`. 
+However, you can also convert a number into a string with the unary operator. In this operation, `"5" + + 5`, the unary operator will convert the number `5` to a string and add two strings, resulting in `"55"`. Using the unary operator in this way isn't as common, at least not intentionally. Usually, adding another `+` operator is a typographical error and resuls in unexpected errors.
 
 The implicit conversion of another `+` operator can be a double-edged sword. It cuts both ways and can produce unintended results. Especially with typographical errors.
 
